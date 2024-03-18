@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+React Hangman Game by Johan Brits 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview:
 
-## Available Scripts
+A React app that allows users to play Hangman. The game picks a random word, which the user must then attempt to guess letter-by-letter. Too many incorrect guesses result in loss of the game. Iconically the process of losing is depicted by your character being hanged.
 
-In the project directory, you can run:
 
-### `npm start`
+Rules of the game:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* The app will select a word and mark out blanks (short lines) for each letter of the word. 
+* Then the player will guess a letter. If that letter is in the word then the app will insert the letter everywhere it would appear. 
+* If the letter isn't in the word then the program will add a body part to the gallows.
+* The player will continue guessing letters until they can either solve the word or all six body parts are on the gallows. 
+* A popup will also indicate if a letter has previously been pressed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Starting and playing the game:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Download source from 
+* In terminal navigate to the hang-man folder
+* Type NPM install to fetch all dependencies
+* Type NPM start to start application
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React Hangman Game: Project Specifications
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Display hangman pole and figure
+* Select a random word from a list of words
+* Display word in UI with correct letters
+* Display wrong letters
+* Show notification when selecting a letter twice
+* Show popup on win or lose
+* Play again button to reset game
+* Help section with Game rules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+References:
+* https://www.printactivities.com/Paper-Games/Rules-For-Hangman.shtml
+* https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/index.html
