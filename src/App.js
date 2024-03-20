@@ -86,8 +86,12 @@ function App() {
         {/* Pass in selected word and correct letters prop */}
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
-      {/* Import help component */}
-      <Help/>
+      <div className="button-container">
+        {/* Import help component */}
+        <Help/>
+        {/* Resets Game */}
+        <button className="help-button" onClick={playAgain}>Restart Game</button>
+      </div>
       {/* Import popup component that assigns the state of play */}
       <Popup
         correctLetters={correctLetters}
